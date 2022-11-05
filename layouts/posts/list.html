@@ -2,7 +2,7 @@
   <h1>My posts</h1>
 
   <ul>
-  {{ range (.Paginate ( first 3 .Pages.ByDate )).Pages }}
+    {{ range first 3 (.Pages.ByPublishDate) }}
     <li>
       <a href="{{ .Permalink }}">{{ .Title }}</a> - {{ .Date | time.Format ":date_long" }}
     </li>
