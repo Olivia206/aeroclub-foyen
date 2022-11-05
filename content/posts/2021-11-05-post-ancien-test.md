@@ -1,8 +1,7 @@
 ---
-title: "Post 2"
+title: "Un post ancien ici"
 date: 2021-11-05T13:07:22+01:00
 draft: false
-type: post
 
 cover:
     image: url
