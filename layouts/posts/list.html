@@ -4,7 +4,7 @@
   <ul>
   {{ range (.Paginate ( first 3 .Pages.ByDate )).Pages }}
     <li>
-      <a href="{{ .Permalink }}">{{ .Title }}</a> - {{ .Date.Format "Janvier 2, 2006" }}
+      <a href="{{ .Permalink }}">{{ .Title }}</a> - {{ .Date | time.Format ":date_long" }}
     </li>
   {{ end }}
   </ul>
